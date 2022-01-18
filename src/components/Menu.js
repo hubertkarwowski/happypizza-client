@@ -37,7 +37,7 @@ const Menu = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("http://localhost:5000/pizzas")
+    fetch("https://happypizza-website.herokuapp.com/pizzas")
       .then((res) => res.json())
       .then((res) => {
         const data = res.pizzas;
